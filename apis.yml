@@ -1,8 +1,23 @@
 aid: bluebottlecoffee
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/bluebottlecoffee.png
 name: bluebottlecoffee
-description: bluebottlecoffee is a company surfaced as a portfolio company of slow-ventures and added
-  to the API Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment
-  pipeline.
+description: Blue Bottle Coffee is a specialty coffee roaster and retailer that sells single-origin
+  beans, blends, and brewing equipment through its ecommerce storefront, subscriptions, and cafes.
+  Surfaced as a portfolio company of Slow Ventures and added to the API Evangelist network for
+  enrichment, the company operates a consumer-facing storefront (bot-protected) with no public
+  developer API, documentation, or well-known discovery surface at the time of this pass; this
+  profile captures its identity and probed domain-security posture.
 url: https://raw.githubusercontent.com/api-evangelist/bluebottlecoffee/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -12,9 +27,14 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-18'
 tags:
 - Company
+- Coffee
+- Retail
+- Ecommerce
+- Food and Beverage
+- Consumer
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -22,5 +42,12 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/bluebottlecoffee-domain-security.yml
 - type: Website
   url: https://bluebottlecoffee.com
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
